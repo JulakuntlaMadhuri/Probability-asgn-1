@@ -1,0 +1,139 @@
+\documentclass[journal,12pt,twocolumn]{IEEEtran}
+
+\usepackage{setspace}
+\usepackage{gensymb}
+\singlespacing
+\usepackage[cmex10]{amsmath}
+
+\usepackage{amsthm}
+
+\usepackage{mathrsfs}
+\usepackage{txfonts}
+\usepackage{stfloats}
+\usepackage{bm}
+\usepackage{cite}
+\usepackage{cases}
+\usepackage{subfig}
+
+\usepackage{longtable}
+\usepackage{multirow}
+
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{steinmetz}
+\usepackage{tikz}
+\usepackage{circuitikz}
+\usepackage{verbatim}
+\usepackage{tfrupee}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{graphicx}
+\usepackage{tkz-euclide}
+
+\usetikzlibrary{calc,math}
+\usepackage{listings}
+    \usepackage{color}                                            %%
+    \usepackage{array}                                            %%
+    \usepackage{longtable}                                        %%
+    \usepackage{calc}                                             %%
+    \usepackage{multirow}                                         %%
+    \usepackage{hhline}                                           %%
+    \usepackage{ifthen}                                           %%
+    \usepackage{lscape}     
+\usepackage{multicol}
+\usepackage{chngcntr}
+
+\DeclareMathOperator*{\Res}{Res}
+
+\renewcommand\thesection{\arabic{section}}
+\renewcommand\thesubsection{\thesection.\arabic{subsection}}
+\renewcommand\thesubsubsection{\thesubsection.\arabic{subsubsection}}
+
+\renewcommand\thesectiondis{\arabic{section}}
+\renewcommand\thesubsectiondis{\thesectiondis.\arabic{subsection}}
+\renewcommand\thesubsubsectiondis{\thesubsectiondis.\arabic{subsubsection}}
+
+
+\hyphenation{op-tical net-works semi-conduc-tor}
+\def\inputGnumericTable{}                                 %%
+
+\lstset{
+%language=C,
+frame=single, 
+breaklines=true,
+columns=fullflexible
+}
+\begin{document}
+\title{Assignment 1}
+\author{Julakuntla Madhuri- CS20BTECH11023}
+\maketitle
+\newpage
+\bigskip
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+Download all python codes from 
+\begin{lstlisting}
+--
+\end{lstlisting}
+%
+and latex-tikz codes from 
+%
+\begin{lstlisting}
+https://github.com/JulakuntlaMadhuri\end{lstlisting}
+\section{Problem 2.9}
+A laboratory blood test 
+99% effective in detecting a 
+certain disease when it is 
+in fact , present. However,
+the test also yields a false
+positive result for 
+0.5percent
+of the healthy person tested
+(i.e, if a Hindi person is tested, 
+then, which probability 0.005 
+the test will imply he has 
+the disease). If 0.1% of
+the population actually has 
+the disease, what is the
+probability that a person
+has the disease given that 
+his test result is positive?
+\section{Solution:}
+Let\\
+A \colon Person\ has\ the\ disease\\
+\doublespacing \ B\colon Person\ does\ not\ have\ disease\\
+\doubblespacing \ C\colon test\ result\ is\ positive\\
+We\ need\ to\ find\ the\ probability\ 
+that\ a\ person\ has\ the\\ disease\
+given\ that\ his\ test\ result\ is\ positive\\
+i.e,\ P(A|C)
+\\
+  \ P(A|C) = \frac{P(A).P(C|A)}{P(B).P(C|B)+P(A).P(C|A)}\\
+  \\
+  P(A)=Probability\ that\ person\
+  has\ disease.\\
+  =\ 0.1 \%= \frac{0.1}{100}\ =0.001\\
+P(C|A)\ =Probability\ that\ test\ result\ is\ \\
+positive\ ,if\ the\ person\ has\ the\ disease.\ \\
+\doubblespacing =\ 99 \% =\ \frac{99}{100}\ =\ 0.99\\
+  P(B)=Probability\ that\ person\
+ does\ not\  have\ disease.\\
+  =\ 99.9 \%= \frac{99.9}{100}\ =0.999\\
+P(C|A)\ =Probability\ that\ test\ result\ is\ \\
+positive\ ,if\ the\ person\ does\ not\ have\ the\ disease.\ \\
+\doubblespacing =\ 0.005\ given\\
+Putting\ values\ in\ formula,\ \\
+ \\
+ \\
+ \\
+ \\
+  \ P(A|C) = \frac{0,001*0.99}{0.999*0.005+0.001*0.99}\\
+
+= $\frac{99}{598.5}$\\
+\\
+= $\frac{990}{5985}$\\
+\\
+= $\frac{22}{133}$\\
+\\
+Therefore,\ required\ probability\ is\  $\frac{22}{133}$\\
+\end{document}
+
